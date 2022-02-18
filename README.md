@@ -1,6 +1,6 @@
 # springboot-Identity-Test
 
-Springboot test for Accenture Test
+Springboot Test
 
 ## Getting started
 
