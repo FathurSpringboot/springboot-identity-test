@@ -1,6 +1,7 @@
 package com.fathur.springboot.test.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 //import jakarta.persistence.*;
 
 @Entity
@@ -11,7 +12,9 @@ public class Identity {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	@Column(name = "name")
-	//@Size(min = 2, max = 50);
+	@Size(min = 2, max = 50);
+	@NotNull
+	@NotBlank
 	private String name;
 	
 	@Column(name = "ssn")
