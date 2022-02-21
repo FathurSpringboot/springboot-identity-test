@@ -12,7 +12,7 @@ public class Identity {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	@Column(name = "name")
-	@Size(min = 2, max = 50);
+	@Size(min = 2, max = 50)
 	@NotNull
 	@NotBlank
 	private String name;
